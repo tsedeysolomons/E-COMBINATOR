@@ -116,25 +116,7 @@ export default function ApplyPage() {
   /* ---------- ui ---------- */
   return (
     <div className="min-h-screen bg-background">
-      {/* ---------- header ---------- */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <img src="/logo.png" alt="E-Combinator logo" className="h-10 w-auto" />
-          <nav className="hidden md:flex items-center space-x-8">
-            {["/", "/about", "/programs", "/news", "/contact", "/help", "/admin/dashboard"].map((href, i) => (
-              <Link
-                key={href}
-                href={href}
-                className={`text-sm font-medium ${pathname === href ? "text-brand-blue-deep border-b-2 border-brand-blue-deep" : "text-foreground hover:text-brand-blue-deep transition-colors"}`}
-              >
-                {["Home", "About Us", "Programs", "News", "Contact", "Help", "Admin Dashboard"][i]}
-              </Link>
-            ))}
-          </nav>
-          <AuthButtons currentPage="apply" />
-          <MobileNav />
-        </div>
-      </header>
+     
 
       {/* ---------- hero ---------- */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-brand-blue-sky/10 via-background to-brand-orange/10">
@@ -549,74 +531,6 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      {/* ---------- footer ---------- */}
-      <footer className="bg-brand-dark-navy text-primary-foreground py-16">
-        <div className="container px-4 md:px-6">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <img src="/logo.png" alt="logo" className="h-10 mb-4" />
-              <p className="text-muted-foreground">Empowering the next generation of entrepreneurs.</p>
-              <div className="flex space-x-3 mt-4">
-                {[Facebook, Twitter, Linkedin, Instagram].map((Icon) => (
-                  <Button
-                    key={Icon.displayName}
-                    variant="ghost"
-                    size="icon"
-                    className="text-muted-foreground hover:text-primary-foreground"
-                  >
-                    <Icon className="h-5 w-5" />
-                  </Button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Navigation</h3>
-              <ul className="space-y-2">
-                {["/", "/about", "/programs", "/news"].map((href, i) => (
-                  <li key={href}>
-                    <Link href={href} className="text-muted-foreground hover:text-primary-foreground">
-                      {["Home", "About", "Programs", "News"][i]}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/help" className="text-muted-foreground hover:text-primary-foreground">
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-muted-foreground hover:text-primary-foreground">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
-              <p className="flex items-center space-x-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
-                <span>info@ecombinator.com</span>
-              </p>
-              <p className="flex items-center space-x-2 text-muted-foreground mt-2">
-                <Phone className="h-4 w-4" />
-                <span>+251 911 223 344</span>
-              </p>
-              <p className="flex items-center space-x-2 text-muted-foreground mt-2">
-                <MapPin className="h-4 w-4" />
-                <span>Addis Ababa, Ethiopia</span>
-              </p>
-            </div>
-          </div>
-          <p className="text-center text-muted-foreground mt-8 border-t border-gray-800 pt-6">
-            © {new Date().getFullYear()} E-Combinator. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }

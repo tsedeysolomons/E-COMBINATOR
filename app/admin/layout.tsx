@@ -1,11 +1,15 @@
-import type React from "react"
-import { AdminSidebar } from "@/components/admin-sidebar"
+import type React from "react";
+import { AdminSidebar } from "@/components/admin-sidebar";
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex max-h-screen bg-background ">
       <AdminSidebar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 overflow-y-scroll">{children}</main>
     </div>
-  )
+  );
 }

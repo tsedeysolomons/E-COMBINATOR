@@ -1,7 +1,13 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import {
   BarChart3,
   Users,
@@ -15,21 +21,26 @@ import {
   Mail,
   Phone,
   MapPin,
-} from "lucide-react"
-import Link from "next/link"
-import { AuthButtons } from "@/components/auth-buttons"
-import { MobileNav } from "@/components/mobile-nav"
-import { usePathname } from "next/navigation"
+} from "lucide-react";
+import Link from "next/link";
+import { AuthButtons } from "@/components/auth-buttons";
+import { MobileNav } from "@/components/mobile-nav";
+import { usePathname } from "next/navigation";
+import NavBar from "@/components/nav-bar";
 
 export default function HomePage() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation Header */}
-      <header className="nav-header">
+      {/* <header className="nav-header">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src="/logo.png" alt="E-Combinator Logo" className="h-10 w-auto" />
+            <img
+              src="/logo.png"
+              alt="E-Combinator Logo"
+              className="h-10 w-auto"
+            />
           </div>
 
           <nav className="nav-menu">
@@ -53,7 +64,9 @@ export default function HomePage() {
             </Link>
             <Link
               href="/admin/dashboard"
-              className={`nav-link ${pathname === "/admin/dashboard" ? "nav-link-active" : ""}`}
+              className={`nav-link ${
+                pathname === "/admin/dashboard" ? "nav-link-active" : ""
+              }`}
             >
               Admin Dashboard
             </Link>
@@ -62,7 +75,8 @@ export default function HomePage() {
           <AuthButtons currentPage="other" />
           <MobileNav />
         </div>
-      </header>
+      </header> */}
+      
 
       {/* Hero Section */}
       <section className="hero-section hero-gradient">
@@ -75,8 +89,9 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="hero-subtitle">
-              E-Combinator connects ambitious founders with the resources, mentorship, and investor network they need to
-              transform innovative ideas into successful companies.
+              E-Combinator connects ambitious founders with the resources,
+              mentorship, and investor network they need to transform innovative
+              ideas into successful companies.
             </p>
             <div className="hero-buttons">
               <Button className="hero-button-primary" asChild>
@@ -103,8 +118,9 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our comprehensive platform provides founders with powerful tools and connections to accelerate their
-              startup journey from idea to IPO.
+              Our comprehensive platform provides founders with powerful tools
+              and connections to accelerate their startup journey from idea to
+              IPO.
             </p>
           </div>
 
@@ -114,12 +130,14 @@ export default function HomePage() {
                 <div className="feature-card-icon bg-gradient-to-r from-brand-blue-deep to-brand-blue-sky">
                   <BarChart3 className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="feature-card-title">Founder Dashboard</CardTitle>
+                <CardTitle className="feature-card-title">
+                  Founder Dashboard
+                </CardTitle>
               </CardHeader>
               <CardContent className="feature-card-content">
                 <CardDescription className="feature-card-description">
-                  Track your startup's progress with comprehensive analytics, milestone tracking, and performance
-                  insights all in one place.
+                  Track your startup's progress with comprehensive analytics,
+                  milestone tracking, and performance insights all in one place.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -129,12 +147,15 @@ export default function HomePage() {
                 <div className="feature-card-icon bg-gradient-to-r from-brand-blue-deep to-brand-orange">
                   <Target className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="feature-card-title">Startup Scoring System</CardTitle>
+                <CardTitle className="feature-card-title">
+                  Startup Scoring System
+                </CardTitle>
               </CardHeader>
               <CardContent className="feature-card-content">
                 <CardDescription className="feature-card-description">
-                  Get objective assessments of your startup's potential with our AI-powered scoring system based on
-                  market data and expert analysis.
+                  Get objective assessments of your startup's potential with our
+                  AI-powered scoring system based on market data and expert
+                  analysis.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -144,12 +165,15 @@ export default function HomePage() {
                 <div className="feature-card-icon bg-gradient-to-r from-brand-orange to-brand-blue-sky">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="feature-card-title">Investor Network</CardTitle>
+                <CardTitle className="feature-card-title">
+                  Investor Network
+                </CardTitle>
               </CardHeader>
               <CardContent className="feature-card-content">
                 <CardDescription className="feature-card-description">
-                  Connect directly with vetted investors, VCs, and angel investors who are actively looking for startups
-                  in your industry and stage.
+                  Connect directly with vetted investors, VCs, and angel
+                  investors who are actively looking for startups in your
+                  industry and stage.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -159,12 +183,14 @@ export default function HomePage() {
                 <div className="feature-card-icon bg-gradient-to-r from-brand-blue-sky to-brand-blue-deep">
                   <Settings className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="feature-card-title">Admin Tools</CardTitle>
+                <CardTitle className="feature-card-title">
+                  Admin Tools
+                </CardTitle>
               </CardHeader>
               <CardContent className="feature-card-content">
                 <CardDescription className="feature-card-description">
-                  Streamline operations with powerful admin tools for team management, document sharing, and workflow
-                  automation.
+                  Streamline operations with powerful admin tools for team
+                  management, document sharing, and workflow automation.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -183,8 +209,8 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Join hundreds of successful founders who transformed their ideas into thriving businesses through our
-              incubator program.
+              Join hundreds of successful founders who transformed their ideas
+              into thriving businesses through our incubator program.
             </p>
           </div>
 
@@ -193,20 +219,28 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <blockquote className="text-muted-foreground mb-6 leading-relaxed">
-                  "E-Combinator didn't just give us funding – they gave us the strategic guidance and network
-                  connections that turned our MVP into a $10M ARR SaaS platform."
+                  "E-Combinator didn't just give us funding – they gave us the
+                  strategic guidance and network connections that turned our MVP
+                  into a $10M ARR SaaS platform."
                 </blockquote>
                 <div className="flex items-center">
                   <div className="h-12 w-12 rounded-full bg-brand-orange/20 p-1 shadow-md mr-4 flex items-center justify-center">
                     <span className="text-brand-orange font-bold">SJ</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Sarah Johnson</div>
-                    <div className="text-sm text-muted-foreground">CEO, TechFlow Solutions</div>
+                    <div className="font-semibold text-foreground">
+                      Sarah Johnson
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      CEO, TechFlow Solutions
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -216,20 +250,28 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <blockquote className="text-muted-foreground mb-6 leading-relaxed">
-                  "The mentorship and investor introductions were game-changing. We went from bootstrapped to Series A
-                  in just 18 months thanks to E-Combinator's support."
+                  "The mentorship and investor introductions were game-changing.
+                  We went from bootstrapped to Series A in just 18 months thanks
+                  to E-Combinator's support."
                 </blockquote>
                 <div className="flex items-center">
                   <div className="h-12 w-12 rounded-full bg-brand-blue-sky/20 p-1 shadow-md mr-4 flex items-center justify-center">
                     <span className="text-brand-blue-deep font-bold">MC</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Michael Chen</div>
-                    <div className="text-sm text-muted-foreground">Founder, GreenTech Innovations</div>
+                    <div className="font-semibold text-foreground">
+                      Michael Chen
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Founder, GreenTech Innovations
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -239,20 +281,28 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
                 <blockquote className="text-muted-foreground mb-6 leading-relaxed">
-                  "E-Combinator's scoring system helped us identify our weak points early and pivot successfully. Now
-                  we're the leading fintech startup in our region."
+                  "E-Combinator's scoring system helped us identify our weak
+                  points early and pivot successfully. Now we're the leading
+                  fintech startup in our region."
                 </blockquote>
                 <div className="flex items-center">
                   <div className="h-12 w-12 rounded-full bg-brand-navy-bg/20 p-1 shadow-md mr-4 flex items-center justify-center">
                     <span className="text-brand-navy-bg font-bold">AP</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Aisha Patel</div>
-                    <div className="text-sm text-muted-foreground">Co-founder, FinanceForward</div>
+                    <div className="font-semibold text-foreground">
+                      Aisha Patel
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Co-founder, FinanceForward
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -261,136 +311,39 @@ export default function HomePage() {
 
           {/* Startup Logos */}
           <div className="text-center">
-            <p className="text-sm text-muted-foreground mb-8 font-medium">TRUSTED BY INNOVATIVE STARTUPS</p>
+            <p className="text-sm text-muted-foreground mb-8 font-medium">
+              TRUSTED BY INNOVATIVE STARTUPS
+            </p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               <div className="h-12 w-32 bg-muted rounded-lg flex items-center justify-center">
-                <span className="font-bold text-muted-foreground">TechFlow</span>
+                <span className="font-bold text-muted-foreground">
+                  TechFlow
+                </span>
               </div>
               <div className="h-12 w-32 bg-muted rounded-lg flex items-center justify-center">
-                <span className="font-bold text-muted-foreground">GreenTech</span>
+                <span className="font-bold text-muted-foreground">
+                  GreenTech
+                </span>
               </div>
               <div className="h-12 w-32 bg-muted rounded-lg flex items-center justify-center">
-                <span className="font-bold text-muted-foreground">FinanceForward</span>
+                <span className="font-bold text-muted-foreground">
+                  FinanceForward
+                </span>
               </div>
               <div className="h-12 w-32 bg-muted rounded-lg flex items-center justify-center">
-                <span className="font-bold text-muted-foreground">DataDrive</span>
+                <span className="font-bold text-muted-foreground">
+                  DataDrive
+                </span>
               </div>
               <div className="h-12 w-32 bg-muted rounded-lg flex items-center justify-center">
-                <span className="font-bold text-muted-foreground">CloudScale</span>
+                <span className="font-bold text-muted-foreground">
+                  CloudScale
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-grid">
-            {/* Company Info */}
-            <div className="footer-section">
-              <div className="flex items-center space-x-2 mb-4">
-                <img src="/logo.png" alt="E-Combinator Logo" className="h-10 w-auto" />
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Empowering the next generation of entrepreneurs with the tools, network, and guidance needed to build
-                successful companies.
-              </p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <Facebook className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <Twitter className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <Instagram className="h-5 w-5" />
-                </Button>
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <div className="footer-section">
-              <h3 className="footer-title">Navigation</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="#" className="footer-link">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="footer-link">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/programs" className="footer-link">
-                    Programs
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/news" className="footer-link">
-                    News and Updates
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Support */}
-            <div className="footer-section">
-              <h3 className="footer-title">Support</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/help" className="footer-link">
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="footer-link">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="footer-link">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="footer-link">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div className="footer-section">
-              <h3 className="footer-title">Contact Info</h3>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-gray-400" />
-                  <span className="text-gray-300">info@ecombinator.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-gray-400" />
-                  <span className="text-gray-300">+251 911 223 344</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-gray-400" />
-                  <span className="text-gray-300">Addis Ababa, Ethiopia</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <p className="footer-copyright">© {new Date().getFullYear()} E-Combinator. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
-  )
+  );
 }
