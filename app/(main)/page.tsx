@@ -76,28 +76,29 @@ export default function HomePage() {
           <MobileNav />
         </div>
       </header> */}
-      
 
       {/* Hero Section */}
       <section className="hero-section hero-gradient">
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Fuel Your{" "}
+              Turning Ethiopian{" "}
               <span className="bg-gradient-to-r from-brand-orange to-brand-blue-deep bg-clip-text text-transparent">
-                Startup Dreams
+                Startups into Global Success Stories
               </span>
             </h1>
             <p className="hero-subtitle">
-              E-Combinator connects ambitious founders with the resources,
-              mentorship, and investor network they need to transform innovative
-              ideas into successful companies.
+              E-Combinator is a six-month startup accelerator program partner
+              with iCog Labs. We help early-stage Ethiopian tech firms grow into
+              globally competitive, investor-ready businesses.
             </p>
             <div className="hero-buttons">
               <Button className="hero-button-primary" asChild>
-                <Link href="/apply">Get Started Today</Link>
+                <Link href="/apply">Apply Now</Link>
               </Button>
-              <Button className="hero-button-secondary">Watch Demo</Button>
+              <Button className="hero-button-secondary">
+                Explore the Program
+              </Button>
             </div>
           </div>
         </div>

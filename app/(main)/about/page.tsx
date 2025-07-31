@@ -39,9 +39,11 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-lg text-muted-foreground sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Empowering the next generation of entrepreneurs with cutting-edge
-              technology, strategic mentorship, and access to a global network
-              of investors and industry leaders.
+              E-Combinator is a program partner with iCog Labs that supports
+              early-stage Ethiopian startups with high potential. Our mission is
+              to guide these startups through their most critical growth phase
+              helping them access the exposure, mentorship,and strategic
+              guidance they need to become world-class companies.
             </p>
           </div>
         </div>
@@ -160,11 +162,25 @@ export default function AboutPage() {
                 </span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To become the leading AI-powered accelerator in Africa, driving
-                technological advancements and creating a thriving startup
-                community in Ethiopia. We envision a future where Ethiopian
-                entrepreneurs lead global innovation, supported by world-class
-                resources and mentorship.
+                <ol className="list-disc pl-6 space-y-2">
+                  <li>
+                    To create a startup-focused platform that supports the
+                    scaling of Ethiopian startups through an integrated support
+                    system based on globally proven approaches.
+                  </li>
+                  <li>
+                    To provide entrepreneurs with the mentorship, connections,
+                    and visibility they need to grow into world-class companies.
+                  </li>
+                  <li>
+                    To help founders think globally by exposing them to vibrant
+                    and diverse entrepreneurial ecosystems.
+                  </li>
+                  <li>
+                    To build a comprehensive, up-to-date database of Ethiopian
+                    startups.
+                  </li>
+                </ol>
               </p>
             </div>
 
@@ -186,7 +202,7 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="font-semibold text-foreground mb-2">
-                          Connect 500 startups with mentors by 2025
+                          Connect 100+ startups with mentors by 2025
                         </h3>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                           Building a comprehensive mentorship network to guide
@@ -205,7 +221,7 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="font-semibold text-foreground mb-2">
-                          Facilitate $10M in funding within 3 years
+                          Facilitate some in funding within the folloing years
                         </h3>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                           Connecting promising startups with investors to fuel
@@ -224,7 +240,7 @@ export default function AboutPage() {
                       </div>
                       <div className="flex-1">
                         <h3 className="font-semibold text-foreground mb-2">
-                          Build a network of 100+ active investors
+                          Build a network of some active investors
                         </h3>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                           Creating a robust ecosystem of funding partners across
