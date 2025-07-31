@@ -1,0 +1,1 @@
+ALTER TABLE "startup_applications" ADD COLUMN "admin_note" text DEFAULT '';

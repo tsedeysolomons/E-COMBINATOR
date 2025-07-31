@@ -1,0 +1,1 @@
+CREATE TYPE "public"."support_type" AS ENUM('Funding', 'Resources', 'Mentorship', 'Marketing');
